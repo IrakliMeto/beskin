@@ -11,7 +11,7 @@
           HOT FORECLOSURE DEALS with one simple search
         </p>
 
-        <TheButton type="medium" text="More About Us" />
+        <BskButton type="medium" text="More About Us" />
       </div>
       <img
         src="@/assets/images/photos/banner.png"
@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import TheButton from "@/components/helper/TheButton";
+import BskButton from "@/components/helper/BskButton";
 export default {
-  name: "TheBanner",
-  components: { TheButton },
+  name: "BskBanner",
+  components: { BskButton },
 };
 </script>
 

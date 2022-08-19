@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <TheHeader />
+    <BskHeader />
     <router-view />
-    <TheFooter />
+    <BskFooter />
   </div>
 </template>
 
@@ -10,10 +10,10 @@
 @import "./assets/styles/main.scss";
 </style>
 <script>
-import TheHeader from "@/components/layout/TheHeader";
-import TheFooter from "@/components/layout/TheFooter";
+import BskHeader from "@/components/layout/BskHeader";
+import BskFooter from "@/components/layout/BskFooter";
 
 export default {
-  components: { TheFooter, TheHeader },
+  components: { BskFooter, BskHeader },
 };
 </script>

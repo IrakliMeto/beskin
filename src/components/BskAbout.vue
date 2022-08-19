@@ -22,18 +22,18 @@
       />
     </div>
 
-    <TheButton type="medium" text="Sell Full Guideliness" />
+    <BskButton type="medium" text="Sell Full Guideliness" />
   </div>
 </template>
 
 <script>
 import GuideCard from "@/components/cards/GuideCard";
-import TheButton from "@/components/helper/TheButton";
+import BskButton from "@/components/helper/BskButton";
 
 export default {
-  name: "TheAbout",
+  name: "BskAbout",
   components: {
-    TheButton,
+    BskButton,
     GuideCard,
   },
 };

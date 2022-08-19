@@ -2,7 +2,7 @@
   <div class="providers">
     <div class="providers__row-holder">
       <div class="providers__row">
-        <TheLogo class="providers__row-logo" />
+        <BskLogo class="providers__row-logo" />
         <p class="providers__row-text">
           More than 45,000+ companies trust besnik
         </p>
@@ -44,12 +44,12 @@
 </template>
 
 <script>
-import TheLogo from "@/components/helper/TheLogo";
+import BskLogo from "@/components/helper/BskLogo";
 
 export default {
-  name: "TheProvider",
+  name: "BskProvider",
   components: {
-    TheLogo,
+    BskLogo,
   },
 };
 </script>
@@ -129,12 +129,6 @@ export default {
     @media (max-width: 1240px) {
       img {
         width: 80%;
-      }
-
-      @media (max-width: 767px) {
-        img {
-          width: 100%;
-        }
       }
     }
   }

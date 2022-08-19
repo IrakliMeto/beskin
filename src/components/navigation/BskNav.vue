@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "TheNav",
+  name: "BskNav",
 };
 </script>
 
@@ -23,10 +23,6 @@ export default {
     gap: 0 14px;
   }
 
-  @media (max-width: 767px) {
-    justify-content: space-between;
-  }
-
   &__link {
     font-family: "Poppins";
     font-style: normal;
@@ -36,6 +32,10 @@ export default {
     color: #4f5361;
     transition: 0.2s ease;
     position: relative;
+
+    @media (max-width: 767px) {
+      font-size: 13px;
+    }
 
     &:after {
       content: "";

@@ -55,7 +55,7 @@
       </div>
 
       <div class="footer__bottom">
-        <TheLogo />
+        <BskLogo />
         <p class="footer__text">Copyright 2020.com, All rights reserved.</p>
       </div>
     </div>
@@ -63,12 +63,12 @@
 </template>
 
 <script>
-import TheLogo from "@/components/helper/TheLogo";
+import BskLogo from "@/components/helper/BskLogo";
 
 export default {
-  name: "TheFooter",
+  name: "BskFooter",
   components: {
-    TheLogo,
+    BskLogo,
   },
 };
 </script>

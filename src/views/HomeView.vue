@@ -1,37 +1,37 @@
 <template>
   <div>
-    <TheBanner />
+    <BskBanner />
 
     <div class="content">
       <div class="container padding content__inner">
-        <TheProvider />
-        <TheAbout />
+        <BskProvider />
+        <BskAbout />
       </div>
     </div>
 
     <CardsContainer />
-    <TheDescription />
+    <BskDescription />
     <PropertiesBlock />
   </div>
 </template>
 
 <script>
-import TheAbout from "@/components/TheAbout";
-import TheBanner from "@/components/banner/TheBanner";
-import TheProvider from "@/components/TheProvider";
+import BskAbout from "@/components/BskAbout";
+import BskBanner from "@/components/banner/BskBanner";
+import BskProvider from "@/components/BskProvider";
 import CardsContainer from "@/components/CardsContainer";
-import TheDescription from "@/components/TheDescription";
+import BskDescription from "@/components/BskDescription";
 import PropertiesBlock from "@/components/PropertiesBlock";
 
 export default {
   name: "HomeView",
   components: {
     PropertiesBlock,
-    TheDescription,
+    BskDescription,
     CardsContainer,
-    TheAbout,
-    TheProvider,
-    TheBanner,
+    BskAbout,
+    BskProvider,
+    BskBanner,
   },
 };
 </script>

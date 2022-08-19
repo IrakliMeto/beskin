@@ -6,7 +6,7 @@
         <p class="properties__text">
           Everything you need to know when you're looking
         </p>
-        <TheButton type="white" text="Get Started Now" />
+        <BskButton type="white" text="Get Started Now" />
       </div>
       <div class="properties__image-holder">
         <img src="@/assets/images/photos/mobile-image.svg" alt="" />
@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import TheButton from "@/components/helper/TheButton";
+import BskButton from "@/components/helper/BskButton";
 export default {
   name: "PropertiesBlock",
-  components: { TheButton },
+  components: { BskButton },
 };
 </script>
 

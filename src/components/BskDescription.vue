@@ -46,7 +46,7 @@
 <script>
 import StatisticsCard from "@/components/cards/StatisticsCard";
 export default {
-  name: "TheDescription",
+  name: "BskDescription",
   components: { StatisticsCard },
 };
 </script>

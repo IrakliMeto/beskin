@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "TheButton",
+  name: "BskButton",
   props: {
     type: {
       type: String,

@@ -1,30 +1,32 @@
 <template>
   <header class="header">
     <div class="container padding header__inner">
-      <TheLogo />
-      <TheNav class="header__nav header__nav--desktop" />
+      <div class="header__holder">
+        <BskLogo />
+        <BskNav class="header__nav header__nav--desktop" />
 
-      <div class="header__buttons">
-        <TheButton type="inline" text="Sign In" />
-        <TheButton type="small" text="Register" />
+        <div class="header__buttons">
+          <BskButton type="inline" text="Sign In" />
+          <BskButton type="small" text="Register" />
+        </div>
       </div>
 
-      <TheNav class="header__nav header__nav--mobile" />
+      <BskNav class="header__nav header__nav--mobile" />
     </div>
   </header>
 </template>
 
 <script>
-import TheLogo from "@/components/helper/TheLogo";
-import TheNav from "@/components/navigation/TheNav";
-import TheButton from "@/components/helper/TheButton";
+import BskLogo from "@/components/helper/BskLogo";
+import BskNav from "@/components/navigation/BskNav";
+import BskButton from "@/components/helper/BskButton";
 
 export default {
-  name: "TheHeader",
+  name: "BskHeader",
   components: {
-    TheButton,
-    TheNav,
-    TheLogo,
+    BskButton,
+    BskNav,
+    BskLogo,
   },
 };
 </script>
@@ -45,8 +47,15 @@ export default {
     align-items: center;
 
     @media (max-width: 767px) {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
+  }
+
+  &__holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__nav {
@@ -57,7 +66,8 @@ export default {
     }
 
     @media (max-width: 767px) {
-      margin: 20px auto 0;
+      width: 100%;
+      margin: 10px 0 0;
     }
 
     &--desktop {
