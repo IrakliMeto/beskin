@@ -1,125 +1,125 @@
 <template>
-  <div class="card">
-    <div class="card__head">
-      <h4 class="card__title">40,000+</h4>
-      <p class="card__text">
+  <div class="statistic-card">
+    <div class="statistic-card__head">
+      <h4 class="statistic-card__title">40,000+</h4>
+      <p class="statistic-card__text">
         By avarage for 2 bedroom apments in San Francisco, CA
       </p>
     </div>
-    <div class="card__bottom">
-      <div class="card__icons">
+    <div class="statistic-card__bottom">
+      <div class="statistic-card__icons">
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
-        />
-      </div>
-
-      <div class="card__icons">
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
-        />
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
-        />
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
-        />
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
       </div>
 
-      <div class="card__icons">
+      <div class="statistic-card__icons">
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
-        />
-      </div>
-
-      <div class="card__icons">
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
-        />
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
-        />
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
       </div>
 
-      <div class="card__icons">
+      <div class="statistic-card__icons">
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
-        />
-      </div>
-
-      <div class="card__icons">
-        <img
-          src="@/assets/images/icons/profile.png"
-          alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
       </div>
 
-      <div class="card__icons">
+      <div class="statistic-card__icons">
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
         />
         <img
           src="@/assets/images/icons/profile.png"
           alt="Profile Icon"
-          class="card__icon"
+          class="statistic-card__icon"
+        />
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+      </div>
+
+      <div class="statistic-card__icons">
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+      </div>
+
+      <div class="statistic-card__icons">
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+      </div>
+
+      <div class="statistic-card__icons">
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
+        />
+        <img
+          src="@/assets/images/icons/profile.png"
+          alt="Profile Icon"
+          class="statistic-card__icon"
         />
       </div>
     </div>
@@ -128,12 +128,12 @@
 
 <script>
 export default {
-  name: "TheCard",
+  name: "StatisticsCard",
 };
 </script>
 
 <style scoped lang="scss">
-.card {
+.statistic-card {
   width: 240px;
   padding: 45px 22px 40px;
   background: #ffffff;

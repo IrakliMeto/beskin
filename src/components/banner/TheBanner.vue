@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import TheButton from "@/components/TheButton";
+import TheButton from "@/components/helper/TheButton";
 export default {
   name: "TheBanner",
   components: { TheButton },
@@ -49,11 +49,24 @@ export default {
     padding: 0 20px 0 40px;
   }
 
+  @media (max-width: 767px) {
+    padding: 0 22px;
+  }
+
   &__box {
     margin-right: 30px;
 
     @media (max-width: 1240px) {
       padding-bottom: 40px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 auto;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -63,6 +76,10 @@ export default {
 
     @media (max-width: 1240px) {
       max-width: 400px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 

@@ -1,24 +1,20 @@
 <template>
-  <div class="card">
-    <img
-      class="card__image"
-      src="@/assets/images/photos/house.png"
-      alt="House Image"
-    />
+  <div class="property-card">
+    <img class="property-card__image" :src="image" alt="House Image" />
 
-    <div class="card__content">
-      <h6 class="card__price">{{ price }}</h6>
+    <div class="property-card__content">
+      <h6 class="property-card__price">{{ price }}</h6>
 
-      <p class="card__text">{{ text }}</p>
+      <p class="property-card__text">{{ text }}</p>
 
-      <div class="card__bottom">
-        <div class="card__about">
+      <div class="property-card__bottom">
+        <div class="property-card__about">
           <img src="@/assets/images/icons/bed.svg" alt="" /> {{ beds }}
         </div>
-        <div class="card__about">
+        <div class="property-card__about">
           <img src="@/assets/images/icons/bath.svg" alt="" /> {{ bath }}
         </div>
-        <div class="card__about">
+        <div class="property-card__about">
           <img src="@/assets/images/icons/fullscreen.svg" alt="" />
           {{ size }}
         </div>
@@ -29,8 +25,9 @@
 
 <script>
 export default {
-  name: "MediumCard",
+  name: "PropertyCard",
   props: {
+    image: {},
     price: {
       type: String,
     },
@@ -51,7 +48,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.card {
+.property-card {
   max-width: 350px;
   width: 100%;
   background: #ffffff;

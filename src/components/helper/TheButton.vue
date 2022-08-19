@@ -20,6 +20,8 @@ export default {
 <style scoped lang="scss">
 .button {
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -35,6 +37,10 @@ export default {
   background: #0f1b4c;
   border-radius: 12px;
 
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+
   &:hover {
     background: #253888;
   }
@@ -43,10 +49,28 @@ export default {
     height: 50px;
     padding: 10px 25px;
     font-size: 13px;
+
+    @media (max-width: 767px) {
+      height: 40px;
+      font-size: 12px;
+    }
   }
 
   &--small {
     height: 40px;
+
+    @media (max-width: 767px) {
+      height: 34px;
+    }
+  }
+
+  &--white {
+    background: #ffffff;
+    color: #002366;
+
+    &:hover {
+      background: #f0eded;
+    }
   }
 
   &--inline {

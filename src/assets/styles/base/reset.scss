@@ -94,7 +94,7 @@ html {
 body,
 html {
   scroll-behavior: smooth;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -180,6 +180,7 @@ image {
 }
 
 a {
+  display: inline-block;
   color: unset;
   text-decoration: unset;
 

@@ -1,7 +1,7 @@
 <template>
-  <div class="small-card">
-    <img class="small-card__icon" :src="image" alt="Image" />
-    <h5 class="small-card__title">{{ text }}</h5>
+  <div class="guide-card">
+    <img class="guide-card__icon" :src="image" alt="Image" />
+    <h5 class="guide-card__title">{{ text }}</h5>
     <LinkWithArrow />
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 import LinkWithArrow from "@/components/helper/LinkWithArrow";
 export default {
-  name: "SmallCard",
+  name: "GuideCard",
   components: { LinkWithArrow },
   props: {
     text: {
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.small-card {
+.guide-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +31,10 @@ export default {
     width: 100%;
     margin-bottom: 26px;
     object-fit: contain;
+
+    @media (max-width: 767px) {
+      margin-bottom: 18px;
+    }
   }
 
   &__title {
@@ -46,6 +50,12 @@ export default {
 
     @media (max-width: 1240px) {
       font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 16px;
     }
   }
 }

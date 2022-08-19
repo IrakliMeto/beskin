@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import TheLogo from "@/components/TheLogo";
+import TheLogo from "@/components/helper/TheLogo";
 
 export default {
   name: "TheFooter",
@@ -79,15 +79,30 @@ export default {
   padding: 105px 0 58px;
   background-color: #fff;
 
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+
   &__item-holder {
     display: flex;
     justify-content: space-between;
     gap: 0 20px;
+
+    @media (max-width: 767px) {
+      gap: 40px 25px;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 767px) {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 
   &__item-title {
@@ -102,6 +117,10 @@ export default {
     @media (max-width: 1023px) {
       margin-bottom: 30px;
       font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
     }
   }
 
@@ -118,6 +137,10 @@ export default {
     @media (max-width: 1023px) {
       font-size: 14px;
       line-height: 20px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
     }
 
     &:hover {
@@ -150,6 +173,11 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767px) {
+      gap: 10px 0;
+      flex-direction: column;
+    }
   }
 
   &__text {
